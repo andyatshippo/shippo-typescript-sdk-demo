@@ -1,0 +1,24 @@
+{
+  "name": "shippo-javascript-sdk-demo",
+  "version": "1.0.0",
+  "description": "A demo project using the Shippo SDK for Javascript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goshippo/shippo-javascript-sdk-demo.git"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc -p .",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "Shippo",
+  "license": "MIT",
+  "dependencies": {
+    "shippo": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "ts-node": "^10.9.2"
+  }
+}
