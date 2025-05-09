@@ -4,10 +4,10 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as https from 'https';
 
-// Initialize the Shippo client
-const sdk: Shippo = new Shippo({ apiKeyHeader:"<YOUR API TOKEN>" });
-
 async function main(): Promise<void> {
+  // Initialize the Shippo client
+  const sdk: Shippo = new Shippo({ apiKeyHeader:"<YOUR API TOKEN>" });
+
   // Create a shipment
   const shipment: Shipment = await sdk.shipments.create({
     addressFrom: {
